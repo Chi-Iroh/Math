@@ -119,7 +119,7 @@ public:
 		if constexpr (Size == 1) {
 			return coefs_[0];
 		}
-		else if constexpr (Size == 2) {								// | a  b |
+		else if constexpr (Size == 2) {					// | a  b |
 			return coefs_[3] * coefs_[0] - coefs_[1] * coefs_[2];	// | c  d |  = ad - bc
 		}
 		else {
