@@ -94,7 +94,7 @@ public:
 	}
 
 	template<std::size_t line, std::size_t column>
-	requires (line < Size&& column < Size)
+	requires (line < Size && column < Size)
 	consteval T at() const noexcept {
 		return coefs_[line * Size + column];
 	}
